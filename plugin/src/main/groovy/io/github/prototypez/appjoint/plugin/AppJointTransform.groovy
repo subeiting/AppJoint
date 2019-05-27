@@ -91,7 +91,7 @@ class AppJointTransform extends Transform {
                 } else if (jarName.startsWith(":")) {
                     // maybe submodule
                     maybeModules.add(jarInput)
-                } else if (jarName.startsWith("io.github.prototypez:app-joint-core")) {
+                } else if (jarName.startsWith("android.local.jars:app-joint-core")) {
                     // find the stub
                     maybeStubs.clear()
                     maybeStubs.add(jarInput)
