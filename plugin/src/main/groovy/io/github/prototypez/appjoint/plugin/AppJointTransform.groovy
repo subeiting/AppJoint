@@ -64,13 +64,6 @@ class AppJointTransform extends Transform {
         return true
     }
 
-    /**
-     * 对输入的class文件转化为目标字节码文件
-     * @param transformInvocation
-     * @throws TransformException
-     * @throws InterruptedException
-     * @throws IOException
-     */
     @Override
     void transform(TransformInvocation transformInvocation) throws TransformException, InterruptedException, IOException {
 
