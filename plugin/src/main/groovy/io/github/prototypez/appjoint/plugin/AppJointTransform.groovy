@@ -88,7 +88,7 @@ class AppJointTransform extends Transform {
                     }
                     // maybe submodule, ':core' could be user's business module
                     maybeModules.add(jarInput)
-                } else if (jarName.startsWith(":")) {
+                } else if (jarName.startsWith(":") && jarInput.scopes.contains(QualifiedContent.Scope.SUB_PROJECTS)) {
                     // maybe submodule
                     maybeModules.add(jarInput)
                 } else if (jarName.startsWith("android.local.jars:app-joint-core")) {

@@ -13,7 +13,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.1.4'
         //classpath 'io.github.prototypez:app-joint:1.6.1'
         classpath 'com.novoda:bintray-release:0.8.1'
-        classpath files("${rootDir}/aar/plugin-1.6.1.jar")
+        classpath files("${rootDir}/aar/app-joint-plugin-1.6.1.jar")
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
