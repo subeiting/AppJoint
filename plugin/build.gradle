@@ -1,0 +1,33 @@
+group 'io.github.prototypez'
+version '1.6.1'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'prototypez'
+    groupId = 'io.github.prototypez'
+    artifactId = 'app-joint'
+    publishVersion = '1.6.1'
+    desc = 'Joint Applications for multi-module Android project'
+    website = 'https://github.com/PrototypeZ/AppJoint'
+}
+
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle-api:3.0.0'
+    compile 'org.ow2.asm:asm:5.1'
+    compile 'commons-io:commons-io:2.6'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'app-joint'
+            repository(url: uri('../../repo'))
+        }
+    }
+}
